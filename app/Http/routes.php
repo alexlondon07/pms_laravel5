@@ -32,6 +32,9 @@ Route::controllers([
 				//Materias Primas
         Route::resource('raw_material', 'RawMaterialController');
         Route::get('raw_materials/search', 'RawMaterialController@search');
+				//Actividades
+        Route::resource('activity', 'ActivityController');
+        Route::get('activitys/search', 'ActivityController@search');
  });
 
 //Rutas permitidas SIN autenticacion

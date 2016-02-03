@@ -3,6 +3,10 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use View;
+use App\Activity;
+use Illuminate\Support\Facades\Redirect;
+
 use Illuminate\Http\Request;
 
 class ActivityController extends Controller {
@@ -14,7 +18,9 @@ class ActivityController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		$items = Activity::paginate();
+		$items->setPath('activity');
+		return View::make('admin.activity.view_activity', compact('items'));
 	}
 
 	/**
