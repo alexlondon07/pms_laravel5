@@ -37,6 +37,7 @@
                     @if (Auth::user())
                     <li><a href="{{URL::to('/')}}/admin/user" title="Usuarios">Usuarios</a></li>
                     <li><a href="{{URL::to('/')}}/admin/raw_material" title="Materias Primas">Materias Primas</a></li>
+                    <li><a href="{{URL::to('/')}}/admin/activity" title="Actividades">Actividades</a></li>
                     @endif
                 </ul>
 

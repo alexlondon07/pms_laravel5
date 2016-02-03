@@ -37,6 +37,8 @@
                             <th>Acciones</th>
                             <th>Nombre</th>
                             <th>Referencia</th>
+                            <th>Tipo</th>
+                            <th>Unidad de medida</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -56,6 +58,8 @@
                             </td>
                             <td>{!! $item->name !!}</td>
                              <td>{!! $item->reference !!}</td>
+                             <td>{!! $item->type !!}</td>
+                             <td>{!! $item->unit_of_measure !!}</td>
                             <td>
                         </tr>
                         @endforeach

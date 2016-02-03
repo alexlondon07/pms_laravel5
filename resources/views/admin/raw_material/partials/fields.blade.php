@@ -21,13 +21,13 @@
 <div class="form-group">
     {!!Form::label('type', 'Tipo', array('class' => 'control-label col-md-4'))!!}
     <div class="col-md-6">
-        {!!Form::select('type',array('critica'=>'Critica','no_critica'=>'No critica'), null, array('class'=>'form-control')) !!}
+        {!!Form::select('type',array('seleccione'=>'seleccione...', 'critica'=>'Critica','no_critica'=>'No critica'), null, array('class'=>'form-control')) !!}
     </div>
 </div>
 <div class="form-group">
     {!!Form::label('unit_of_measure', 'Unidad de medida', array('class' => 'control-label col-md-4'))!!}
     <div class="col-md-6">
-        {!!Form::select('unit_of_measure',array('metro'=>'Metro','kilo'=>'Kilo', 'otro'=>'Otro'), null, array('class'=>'form-control')) !!}
+        {!!Form::select('unit_of_measure',array('seleccione'=>'seleccione...', 'metro'=>'Metro','kilo'=>'Kilo', 'otro'=>'Otro'), null, array('class'=>'form-control')) !!}
     </div>
 </div>
 <div class="form-group">

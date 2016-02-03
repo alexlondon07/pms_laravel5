@@ -136,7 +136,7 @@ class UserController extends Controller {
                 });
                 $c = count($arrparam);
                 if ($c > 1) {
-                    foreach ($arrparam as $p) {
+                  for ($i = 1; $i < $c; $i++) {
                         $p = $arrparam[$i];
                         $q->whereNested(function($q) use ($p) {
                             $q->where('id', 'LIKE', '%' . $p . '%');
