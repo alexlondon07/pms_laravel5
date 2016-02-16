@@ -16,7 +16,7 @@ class CreateMachinesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('reference');
-            $table->string('descripcion', 450);
+            $table->string('description', 450);
             $table->string('use_common');//Uso comun
             $table->string('variables');
             $table->string('maintenance_intervals');//Periocidad mantenimiento
