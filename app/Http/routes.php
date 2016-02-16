@@ -13,7 +13,7 @@
 
 //Route::get('/', 'WelcomeController@index');
 Route::get('/', 'HomeController@index');
-Route::get('home', 'WelcomeController@index');
+Route::get('home', 'HomeController@index');
 Route::get('login', 'HomeController@index');
 
 Route::controllers([
@@ -35,6 +35,9 @@ Route::controllers([
 				//Actividades
         Route::resource('activity', 'ActivityController');
         Route::get('activitys/search', 'ActivityController@search');
+				//Maquinas
+        Route::resource('machine', 'MachineController');
+        Route::get('machines/search', 'MachineController@search');
  });
 
 //Rutas permitidas SIN autenticacion
