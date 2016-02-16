@@ -20,7 +20,6 @@
 
                     @if($raw_material->id)
                     {!! Form::model($raw_material, ['id' => 'form_raw_material', 'route' => ['admin.raw_material.update', $raw_material->id], 'method' => 'put', 'role'=>'form', 'class'=>'form-horizontal', 'enctype'=>'multipart/form-data']) !!}
-                    {!! Form::hidden('email_old', $raw_material->email, array('id'=>'email_old'))!!}
                     @else
                     {!!Form::model($raw_material, ['id' => 'form_raw_material', 'route' => 'admin.raw_material.store', 'role'=>'form', 'class'=>'form-horizontal', 'enctype'=>'multipart/form-data']) !!}
                     @endif

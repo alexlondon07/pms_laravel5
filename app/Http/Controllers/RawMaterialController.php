@@ -32,7 +32,7 @@ class RawMaterialController extends Controller {
 	{
 		$raw_material = new RawMaterial;
 		$show = false;
-		return View::make('admin.raw_material.new_raw_material', compact('raw_material', 'show'));
+		return View::make('admin.raw_material.new_edit_raw_material', compact('raw_material', 'show'));
 	}
 
 	/**
@@ -56,7 +56,7 @@ class RawMaterialController extends Controller {
 	{
 		$raw_material = RawMaterial::findOrFail($id);
 		$show = true;
-		return View::make('admin.raw_material.new_raw_material', compact('raw_material', 'show'));
+		return View::make('admin.raw_material.new_edit_raw_material', compact('raw_material', 'show'));
 	}
 
 	/**
@@ -69,7 +69,7 @@ class RawMaterialController extends Controller {
 	{
 		$raw_material = RawMaterial::findOrFail($id);
 		$show = false;
-		return View::make('admin.raw_material.new_raw_material', compact('raw_material', 'show'));
+		return View::make('admin.raw_material.new_edit_raw_material', compact('raw_material', 'show'));
 	}
 
 	/**

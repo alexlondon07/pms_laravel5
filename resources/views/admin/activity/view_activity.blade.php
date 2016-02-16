@@ -12,7 +12,7 @@
             <div class="controls form-inline">
                 <a href="{!! URL::to('/') !!}/admin/activity/create" class="btn btn-primary pull-right">Crear Actividades</a>
                 <div class="input-group">
-                    {!! Form::open(array('url' => 'admin/raw_materials/search', 'id' => 'search_form', 'method'=>'GET', 'class'=>'control-group')) !!}
+                    {!! Form::open(array('url' => 'admin/activitys/search', 'id' => 'search_form', 'method'=>'GET', 'class'=>'control-group')) !!}
                     <div class="form-group">
                         <input id="search"  name="search"  type="text" required="true" class="form-control" placeholder="Buscar..." value="@if(isset($search)){!! $search !!}@endif" >
                     </div>
