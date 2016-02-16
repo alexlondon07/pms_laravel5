@@ -9,9 +9,11 @@ class ExampleTest extends TestCase {
 	 */
 	public function testBasicExample()
 	{
-		$response = $this->call('GET', '/');
+		//$response = $this->call('GET', '/');
 
-		$this->assertEquals(200, $response->getStatusCode());
+		//$this->assertEquals(200, $response->getStatusCode());
+
+		$response = $this->action('GET', 'HomeController@index');
 	}
 
 }

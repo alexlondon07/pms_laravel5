@@ -2,6 +2,8 @@
 
 class TestCase extends Illuminate\Foundation\Testing\TestCase {
 
+	protected $baseUrl = 'http://localhost:8080/GitHub/pms_laravel5/public';
+
 	/**
 	 * Creates the application.
 	 *
