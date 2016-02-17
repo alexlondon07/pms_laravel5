@@ -20,7 +20,7 @@ class CreateMachinesTable extends Migration
             $table->string('use_common');//Uso comun
             $table->string('variables');
             $table->string('maintenance_intervals');//Periocidad mantenimiento
-            $table->string('Location');
+            $table->string('location');
             $table->string('maximun_capacity');
             $table->string('general_manintenance');
             //Datos de proveedor

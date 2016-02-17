@@ -49,6 +49,20 @@ class UserTableSeeder extends Seeder {
 			'enable' => 'si'
 			));
 
+		//Seeder Maquinas
+		\DB::table('machines')->insert(array (
+			'name' => $faker->name,
+			'reference' => $faker->name,
+			'description' => $faker->text,
+			'use_common' => $faker->name,
+			'variables' => 'Energia',
+			'location' => $faker->city,
+			'name_provider' => $faker->name,
+			'contact_provider' => $faker->phoneNumber,
+			'billing_provider' => $faker->swiftBicNumber,
+			'enable' => 'si'
+			));
+
 			//Seeder de productos
 			\DB::table('products')->insert(array (
 				'name' => $faker->name,

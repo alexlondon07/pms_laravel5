@@ -23,5 +23,5 @@ class Machine extends Model
      * Atributos que se pueden insertar en Mass-Assignment
      * @var array
      */
-    protected $fillable = ['name', 'reference', 'description',  'use_common', 'variables', 'maintenance_intervals', 'Location', 'maximun_capacity', 'general_manintenance', 'manufacturer', 'name_provider', 'contact_provider', 'billing_provider', 'catalog_provider', 'data_sheet_provider', 'enable'];
+    protected $fillable = ['name', 'reference', 'description',  'use_common', 'variables', 'maintenance_intervals', 'location', 'maximun_capacity', 'general_manintenance', 'manufacturer', 'name_provider', 'contact_provider', 'billing_provider', 'catalog_provider', 'data_sheet_provider', 'enable'];
 }

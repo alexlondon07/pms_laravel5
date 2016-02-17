@@ -36,6 +36,11 @@
                         <tr>
                             <th>Acciones</th>
                             <th>Nombre</th>
+                            <th>Referencia</th>
+                            <th>Descripcion</th>
+                            <th>Uso comun</th>
+                            <th>Variables</th>
+                            <th>Habilitado</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -55,6 +60,10 @@
                             </td>
                             <td>{!! $item->name !!}</td>
                              <td>{!! $item->reference !!}</td>
+                             <td>{!! $item->description !!}</td>
+                             <td>{!! $item->use_common !!}</td>
+                             <td>{!! $item->variables !!}</td>
+                             <td>{!! $item->enable !!}</td>
                             <td>
                         </tr>
                         @endforeach

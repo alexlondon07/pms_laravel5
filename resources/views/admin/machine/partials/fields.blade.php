@@ -21,7 +21,7 @@
           <div class="form-group">
             {!!Form::label('description', 'Descripcion', array('class' => 'control-label col-md-4'))!!}
             <div class="col-sm-8">
-              {!!Form::text('description',null, array('class' => 'form-control'))!!}
+              {!!Form::textarea('description',null, array('class' => 'form-control'))!!}
             </div>
           </div>
           <div class="form-group">
@@ -42,13 +42,17 @@
               {!!Form::text('location',null, array('class' => 'form-control'))!!}
             </div>
           </div>
-
           <div class="form-group">
             {!!Form::label('maximun_capacity', 'Capacidad maxima' , array('class' => 'control-label col-md-4'))!!}
             <div class="col-md-8">
               {!!Form::text('maximun_capacity',null, array('class' => 'form-control'))!!}
             </div>
           </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-horizontal">
+
           <div class="form-group">
             {!!Form::label('general_manintenance', 'Mantenimiento general', array('class' => 'control-label col-md-4'))!!}
             <div class="col-md-8">
@@ -63,11 +67,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="form-horizontal">
-
           <div class="form-group">
             {!!Form::label('manufacturer', 'Fabricante', array('class' => 'control-label col-md-4'))!!}
             <div class="col-sm-8">
