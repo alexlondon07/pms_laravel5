@@ -39,6 +39,8 @@
                     <li><a href="{{URL::to('/')}}/admin/raw_material" title="Materias Primas">Materias Primas</a></li>
                     <li><a href="{{URL::to('/')}}/admin/activity" title="Actividades">Actividades</a></li>
                     <li><a href="{{URL::to('/')}}/admin/machine" title="Maquinas">Maquinas</a></li>
+                    <li><a href="{{URL::to('/')}}/admin/product" title="Productos">Productos</a></li>
+                    <li><a href="{{URL::to('/')}}/admin/client" title="Clientes">Clientes</a></li>
                     @endif
                 </ul>
 

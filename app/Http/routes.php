@@ -38,6 +38,9 @@ Route::controllers([
 				//Maquinas
         Route::resource('machine', 'MachineController');
         Route::get('machines/search', 'MachineController@search');
+				//Productos
+        Route::resource('product', 'ProductController');
+        Route::get('products/search', 'ProductController@search');
  });
 
 //Rutas permitidas SIN autenticacion

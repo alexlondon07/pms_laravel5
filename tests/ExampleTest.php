@@ -7,13 +7,22 @@ class ExampleTest extends TestCase {
 	 *
 	 * @return void
 	 */
-	public function testBasicExample()
-	{
+	public function testBasicExample(){
 		//$response = $this->call('GET', '/');
 
 		//$this->assertEquals(200, $response->getStatusCode());
 
-		$response = $this->action('GET', 'HomeController@index');
+		//$response = $this->action('GET', 'HomeController@index');
+		 $this->call('GET', 'user');
 	}
+
+
+
+	// function welcome(){
+  //   if (auth()->check()) {
+  //       return 'Welcome ' . auth()->user()->name . '!';
+  //   }
+  //   return 'Welcome guest!';
+	// }
 
 }

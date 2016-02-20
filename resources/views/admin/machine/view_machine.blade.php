@@ -10,7 +10,7 @@
             <h2 class="page-header">Maquinas</h2>
             <h4>{!!$items->total()!!} resultados </h4>
             <div class="controls form-inline">
-                <a href="{!! URL::to('/') !!}/admin/machine/create" class="btn btn-primary pull-right">Crear Materia prima</a>
+                <a href="{!! URL::to('/') !!}/admin/machine/create" class="btn btn-primary pull-right">Crear Maquinas</a>
                 <div class="input-group">
                     {!! Form::open(array('url' => 'admin/machines/search', 'id' => 'search_form', 'method'=>'GET', 'class'=>'control-group')) !!}
                     <div class="form-group">
