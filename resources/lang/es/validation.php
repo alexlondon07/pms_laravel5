@@ -107,5 +107,4 @@ return [
         'email' => 'Correo Electronico',
         'password'=>'Contraseña'
     ],
-
 ];
